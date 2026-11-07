@@ -1,4 +1,4 @@
-const CACHE='cmc-3d-prints-shell-v4';
+const CACHE='cmc-3d-prints-shell-v5';
 const SHELL=['./','./index.html','./app.js?v=4','./manifest.webmanifest','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('cmc-3d-prints-shell-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));});
