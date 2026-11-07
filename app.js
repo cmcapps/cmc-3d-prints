@@ -1,6 +1,7 @@
 'use strict';
 const appUrl='https://script.google.com/macros/s/AKfycbz4eKe-0qHsF_6L_9BsyV6SWvpuJbtTMbNnLL_FP62EOTBgn4H0UrXKqy59Sj8yCcqyfw/exec';
-document.getElementById('app').src=appUrl;
+document.getElementById('enter').href=appUrl;
+document.getElementById('embedded').addEventListener('click',()=>{document.getElementById('welcome').hidden=true;const frame=document.getElementById('app');frame.hidden=false;frame.src=appUrl;});
 document.getElementById('open').href=appUrl;
 const install=document.getElementById('install'),help=document.getElementById('help');
 let promptEvent;
