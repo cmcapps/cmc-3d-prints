@@ -1,0 +1,26 @@
+{
+  "id": "./",
+  "name": "CMC 3D Prints",
+  "short_name": "CMC 3D Prints",
+  "lang": "es",
+  "description": "Pedidos, gastos y stock de tu taller de impresión 3D.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6b3fa0",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
